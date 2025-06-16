@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
+  <meta name="keywords"
+    content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+  <meta name="author" content="elemis">
+  <title>休斯國際生活</title>
+  <!-- <link rel="shortcut icon" href="./assets/img/favicon.png"> -->
+  <!-- DIY 改圖 -->
+  <link rel="shortcut icon" href="./assets/img/diy_favicon.png">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<!-- include共用的 main_menu.html JS部分 -->
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+  
+<!-- /include共用的 main_menu.html JS部分-->
+
+
+
+<body>
+  <!-- include 共用的 content.html  -->
+  <div w3-include-html="main_menu.html"></div> 
+  <script>
+  includeHTML();
+  </script>
+  <!-- /include 共用的 content.html  -->
+
+  <!-- slideshow區域 -->
+  <section class="wrapper bg-dark">
+    <div class="swiper-container swiper-hero dots-over" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="true" data-items="1">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg7.jpg"> -->
+            <!-- DIY 改圖與移除灰階半透明覆蓋效果-->
+          <div class="swiper-slide bg-dark bg-image" data-image-src="./assets/img/photos/diy_bg7.jpg">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
+                  <!-- <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">We bring solutions to make life easier.</h2>
+                  <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">We are a creative company that focuses on long term relationships with customers.</p> -->
+                  <!-- <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div> -->
+                </div>
+                <!--/column -->
+              </div>
+              <!--/.row -->
+            </div>
+            <!--/.container -->
+          </div>
+          <!--/.swiper-slide -->
+          <!-- <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg8.jpg"> -->
+           <!-- DIY 改圖與移除灰階半透明覆蓋效果-->
+          <div class="swiper-slide bg-dark bg-image" data-image-src="./assets/img/photos/diy_bg8.jpg">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center justify-content-center align-self-center">
+                  <!-- <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">We are trusted by over a million customers.</h2>
+                  <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Here a few reasons why our customers choose us.</p> -->
+                  <div class="animate__animated animate__slideInUp"><a href="./assets/media/ai_model_hand_box.mp4" class="btn btn-circle btn-white btn-play ripple mx-auto mb-5" data-glightbox><i class="icn-caret-right"></i></a></div>
+                </div>
+                <!--/column -->
+              </div>
+              <!--/.row -->
+            </div>
+            <!--/.container -->
+          </div>
+          <!--/.swiper-slide -->
+          <!-- <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg9.jpg"> -->
+            <!-- DIY 改圖 -->
+          <div class="swiper-slide bg-dark bg-image" data-image-src="./assets/img/photos/diy_bg9.jpg">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-5 col-xl-6 offset-xl-6 col-xxl-5 offset-xxl-6 text-center text-lg-start justify-content-center align-self-center align-items-start">
+                  <!-- <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Just sit and relax.</h2>
+                  <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">We make sure your spending is stress free so that you can have the perfect control.</p> -->
+                 
+                  <!-- <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-lg btn-outline-white rounded-pill">Contact Us</a></div> -->
+                </div>
+                <!--/column -->
+              </div>
+              <!--/.row -->
+            </div>
+            <!--/.container -->
+          </div>
+          <!--/.swiper-slide -->
+        </div>
+        <!--/.swiper-wrapper -->
+      </div>
+      <!-- /.swiper -->
+    </div>
+    <!-- /.swiper-container -->
+  </section>
+  
+  <!-- /slideshow區域 -->
+
+  <!-- Slogan 口號區塊 -->
+  <section class="wrapper image-wrapper bg-image bg-overlay" data-image-src="./assets/img/photos/cloud_move.gif"
+    style="background-image: url(./assets/img/photos/bg1.jpg)">
+    <div class="container py-18 text-center">
+      <div class="row">
+        <div class="col-lg-10 col-xl-10 col-xxl-8 mx-auto">
+          <!-- <a href="./assets/media/movie.mp4" class="btn btn-circle btn-white btn-play ripple mx-auto mb-5" data-glightbox=""><i class="icn-caret-right"></i></a> -->
+          <!-- DIY 修改影片來源 -->
+          <a href="./assets/media/ai_model_dance.mp4" class="btn btn-circle btn-white btn-play ripple mx-auto mb-5"
+            data-glightbox=""><i class="icn-caret-right"></i></a>
+
+          <h1 class="display-4  text-white">夢想是對自己的承諾，實現夢想是休斯對您的承諾</h1>
+        </div>
+        <!--/column -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+
+ <!-- 熱銷商品區 -->
+  <section>
+    <div class="row" id="hot_product_row">
+      <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center hot_product_carousel_area">
+        <h2 class="diy_hot_product_title_ch">熱銷商品</h2>
+        <h2 class="diy_hot_product_title_en">Hot Product</h2>
+        <!-- DIY -->
+        
+      </div>
+      <!-- /column -->
+    </div>
+    <div class="container-fluid px-md-6">
+      <div class="swiper-container blog grid-view mb-17 mb-md-19" data-margin="30" data-nav="true" data-dots="true"
+        data-items-xxl="4" data-items-md="4" data-items-xs="1">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hot_product_carousel_item">
+              <figure class="rounded"><img src="./assets/img/photos/hot_product_01.jpg" alt="" /></figure>
+              <h4><a href="#">【TW8-1003】</a></h4>
+              <h4><a href="#">AKK593 明星馭菌飲</a></h4>
+              <h4><a href="#">售價 3,990元</a></h4>
+            </div>
+            <!--/.swiper-slide -->
+            <div class="swiper-slide hot_product_carousel_item">
+              <figure class="rounded"><img src="./assets/img/photos/hot_product_02.jpg" alt="" /></figure>
+              <h4><a href="#">【TW8-1002】</a></h4>
+              <h4><a href="#">GOT! 代謝排護飲</a></h4>
+              <h4><a href="#">售價 3,990元</a></h4>
+            </div>
+            <!--/.swiper-slide -->
+            <div class="swiper-slide hot_product_carousel_item">
+              <figure class="rounded"><img src="./assets/img/photos/hot_product_03.jpg" alt="" /></figure>
+              <h4><a href="#">【TW8-1001】</a></h4>
+              <h4><a href="#">NAD+活泉賦能飲</a></h4>
+              <h4><a href="#">售價 3,990元</a></h4>
+            </div>
+            <div class="swiper-slide hot_product_carousel_item">
+              <figure class="rounded"><img src="./assets/img/photos/hot_product_01.jpg" alt="" /></figure>
+              <h4><a href="#">【TW8-1003】</a></h4>
+              <h4><a href="#">AKK593 明星馭菌飲</a></h4>
+              <h4><a href="#">售價 3,990元</a></h4>
+            </div>
+            <!--/.swiper-slide -->
+            <div class="swiper-slide hot_product_carousel_item">
+              <figure class="rounded"><img src="./assets/img/photos/hot_product_02.jpg" alt="" /></figure>
+              <h4><a href="#">【TW8-1002】</a></h4>
+              <h4><a href="#">GOT! 代謝排護飲</a></h4>
+              <h4><a href="#">售價 3,990元</a></h4>
+            </div>
+            <!--/.swiper-slide -->
+            <div class="swiper-slide hot_product_carousel_item">
+              <figure class="rounded"><img src="./assets/img/photos/hot_product_03.jpg" alt="" /></figure>
+              <h4><a href="#">【TW8-1001】</a></h4>
+              <h4><a href="#">NAD+活泉賦能飲</a></h4>
+              <h4><a href="#">售價 3,990元</a></h4>
+            </div>
+            <div class="swiper-slide hot_product_carousel_item">
+              <figure class="rounded"><img src="./assets/img/photos/hot_product_01.jpg" alt="" /></figure>
+              <h4><a href="#">【TW8-1003】</a></h4>
+              <h4><a href="#">AKK593 明星馭菌飲</a></h4>
+              <h4><a href="#">售價 3,990元</a></h4>
+            </div>
+            <!--/.swiper-slide -->
+            <div class="swiper-slide hot_product_carousel_item">
+              <figure class="rounded"><img src="./assets/img/photos/hot_product_02.jpg" alt="" /></figure>
+              <h4><a href="#">【TW8-1002】</a></h4>
+              <h4><a href="#">GOT! 代謝排護飲</a></h4>
+              <h4><a href="#">售價 3,990元</a></h4>
+            </div>
+            <!--/.swiper-slide -->
+            <div class="swiper-slide hot_product_carousel_item">
+              <figure class="rounded"><img src="./assets/img/photos/hot_product_03.jpg" alt="" /></figure>
+              <h4><a href="#">【TW8-1001】</a></h4>
+              <h4><a href="#">NAD+活泉賦能飲</a></h4>
+              <h4><a href="#">售價 3,990元</a></h4>
+            </div>
+          </div>
+          <!--/.swiper-wrapper -->
+        </div>
+        <!-- /.swiper -->
+      </div>
+      <!-- /.swiper-container -->
+    </div>
+    
+  </section>
+  <!-- /熱銷商品區 -->
+  
+
+  <!-- 最新消息 -->
+<section id="snippet-2" class="wrapper bg-light wrapper-border">
+      <!-- <div id="last_news_text" class="container pt-15 pt-md-17 pb-13 pb-md-15"> -->
+      <div id="last_news_text" class="container">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0">
+          <div class="col-lg-4 mt-lg-2">
+            <h2 class="display-4 mb-3 last_news">最新消息</h2>
+            <p class="lead fs-lg mb-6 pe-xxl-5">NEWS</p>
+            <hr class="lead fs-lg mb-6 pe-xxl-5 diy_last_news_hr">
+            <p class="lead fs-lg mb-6 pe-xxl-5">迅速掌握休斯最新資訊</p>
+            <a href="#" class="btn btn-soft-primary rounded-pill">MORE</a>
+          </div>
+          <!-- /column -->
+          <div class="col-lg-8">
+            <div class="swiper-container blog grid-view mb-6 swiper-container-1" data-margin="30" data-dots="true" data-items-md="2" data-items-xs="1">
+              <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-32fc093f1e194c9b" aria-live="off" style="cursor: grab; transform: translate3d(0px, 0px, 0px);">
+                  <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" style="width: 403.5px; margin-right: 30px;">
+                    <article>
+                      <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img src="../../assets/img/photos/last_new_item_01.png" alt=""><span class="bg"></span></a>
+                        <figcaption>
+                          <h5 class="from-top mb-0">Read More</h5>
+                        </figcaption>
+                      </figure>
+                      <div class="post-header">
+                        <div class="post-category text-line">
+                          <a href="#" class="hover" rel="category">【促銷活動】</a>
+                        </div>
+                        <!-- /.post-category -->
+                        <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="#">新事業啟動特別獎勵開跑啦!!</a></h2>
+                      </div>
+                      <!-- /.post-header -->
+                      <div class="post-footer">
+                        <ul class="post-meta mb-0">
+                          <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26日 五月 2025年</span></li>
+                          <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>4</a></li>
+                        </ul>
+                        <!-- /.post-meta -->
+                      </div>
+                      <!-- /.post-footer -->
+                    </article>
+                    <!-- /article -->
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" style="width: 403.5px; margin-right: 30px;">
+                    <article>
+                      <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img src="../../assets/img/photos/last_new_item_02.png" alt=""><span class="bg"></span></a>
+                        <figcaption>
+                          <h5 class="from-top mb-0">閱讀更多</h5>
+                        </figcaption>
+                      </figure>
+                      <div class="post-header">
+                        <div class="post-category text-line">
+                          <a href="#" class="hover" rel="category">【公告】</a>
+                        </div>
+                        <!-- /.post-category -->
+                        <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">休斯國際歡慶端午活動</a></h2>
+                      </div>
+                      <!-- /.post-header -->
+                      <div class="post-footer">
+                        <ul class="post-meta mb-0">
+                          <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30日 五月 2025年</span></li>
+                          <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
+                        </ul>
+                        <!-- /.post-meta -->
+                      </div>
+                      <!-- /.post-footer -->
+                    </article>
+                    <!-- /article -->
+                  </div>
+                  <!--/.swiper-slide -->
+                  <div class="swiper-slide" role="group" aria-label="3 / 4" style="width: 403.5px; margin-right: 30px;">
+                    <article>
+                      <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img src="../../assets/img/photos/last_new_item_03.png" alt=""><span class="bg"></span></a>
+                        <figcaption>
+                          <h5 class="from-top mb-0">閱讀更多</h5>
+                        </figcaption>
+                      </figure>
+                      <div class="post-header">
+                        <div class="post-category text-line">
+                          <a href="#" class="hover" rel="category">【公告】</a>
+                        </div>
+                        <!-- /.post-category -->
+                        <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="#">休斯國際歡慶教師節</a></h2>
+                      </div>
+                      <!-- /.post-header -->
+                      <div class="post-footer">
+                        <ul class="post-meta mb-0">
+                          <li class="post-date"><i class="uil uil-calendar-alt"></i><span>27日 九月 2025年</span></li>
+                          <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
+                        </ul>
+                        <!-- /.post-meta -->
+                      </div>
+                      <!-- /.post-footer -->
+                    </article>
+                    <!-- /article -->
+                  </div>
+                  <!--/.swiper-slide -->
+                 <div class="swiper-slide" role="group" aria-label="3 / 4" style="width: 403.5px; margin-right: 30px;">
+                    <article>
+                      <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img src="../../assets/img/photos/last_new_item_04.png" alt=""><span class="bg"></span></a>
+                        <figcaption>
+                          <h5 class="from-top mb-0">閱讀更多</h5>
+                        </figcaption>
+                      </figure>
+                      <div class="post-header">
+                        <div class="post-category text-line">
+                          <a href="#" class="hover" rel="category">【公告】</a>
+                        </div>
+                        <!-- /.post-category -->
+                        <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="#">休斯國際歡慶春節</a></h2>
+                      </div>
+                      <!-- /.post-header -->
+                      <div class="post-footer">
+                        <ul class="post-meta mb-0">
+                          <li class="post-date"><i class="uil uil-calendar-alt"></i><span>16日 二月 2026年</span></li>
+                          <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
+                        </ul>
+                        <!-- /.post-meta -->
+                      </div>
+                      <!-- /.post-footer -->
+                    </article>
+                    <!-- /article -->
+                  </div>
+                  <!--/.swiper-slide -->
+                </div>
+                <!--/.swiper-wrapper -->
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+              <!-- /.swiper -->
+            <div class="swiper-controls"><div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div></div></div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+     
+    </section>
+  <!-- /最新消息 -->
+
+   <!-- include 共用的 footer.html  -->
+   <div w3-include-html="footer.html"></div> 
+   <script>
+   includeHTML();
+   </script>
+   <!-- /include 共用的 footer.html  -->
+  
+
+  <!-- DIY 登入區彈窗 -->
+  <div class="modal fade" id="modal-signin" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content text-center">
+            <div class="modal-body">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h2 class="mb-3 text-start">休斯國際歡迎您</h2>
+              <p class="lead mb-6 text-start">請輸入您的帳號與密碼</p>
+              <form class="text-start mb-3">
+                <div class="form-floating mb-4">
+                  <input type="email" class="form-control" placeholder="Email" id="loginEmail">
+                  <label for="loginEmail">帳號</label>
+                </div>
+                <div class="form-floating password-field mb-4">
+                  <input type="password" class="form-control" placeholder="Password" id="loginPassword">
+                  <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                  <label for="loginPassword">密碼</label>
+                </div>
+                <a class="btn btn-primary rounded-pill btn-login w-100 mb-2" href="./admin/admin_index.html">登  入</a>
+              </form>
+              <!-- /form -->
+              <p class="mb-1"><a href="#" class="hover">忘記密碼?</a></p>
+              <p class="mb-0">還 沒 加 入 會 員 ?<a href="#" data-bs-target="#modal-signup" data-bs-toggle="modal" data-bs-dismiss="modal" class="hover">我要註冊</a></p>
+              <div class="divider-icon my-4">or</div>
+              <nav class="nav social justify-content-center text-center">
+                <a href="#" class="btn btn-circle btn-sm btn-google">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                   <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                  </svg>
+                </a>
+                <a href="#" class="btn btn-circle btn-sm btn-facebook-f"><i class="uil uil-facebook-f"></i></a>
+                <a href="#" class="btn btn-circle btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-line" viewBox="0 0 16 16">
+                  <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0M5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.15.15 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157m.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832l-.013-.015v-.001l-.01-.01-.003-.003-.011-.009h-.001L7.88 4.79l-.003-.002-.005-.003-.008-.005h-.002l-.003-.002-.01-.004-.004-.002-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.2.2 0 0 0 .039.038l.001.001.01.006.004.002.008.004.007.003.005.002.01.003h.003a.2.2 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.16.16 0 0 0-.108.044h-.001l-.001.002-.002.003a.16.16 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.16.16 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
+                </svg>
+                </a>
+              </nav>
+              <!--/.social -->
+            </div>
+            <!--/.modal-content -->
+          </div>
+          <!--/.modal-body -->
+        </div>
+        <!--/.modal-dialog -->
+      </div>
+  <!-- /DIY 登入區彈窗 -->
+
+  <!-- DIY 註冊區彈窗 -->
+  <div class="modal fade" id="modal-signup" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content text-center">
+            <div class="modal-body">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h2 class="mb-3 text-start">歡迎註冊</h2>
+              <p class="lead mb-6 text-start">請輸入您的帳號與密碼</p>
+              <form class="text-start mb-3">
+                <div class="form-floating mb-4">
+                  <input type="email" class="form-control" placeholder="Email" id="loginEmail">
+                  <label for="loginEmail">帳號</label>
+                </div>
+                <div class="form-floating password-field mb-4">
+                  <input type="password" class="form-control" placeholder="Password" id="loginPassword">
+                  <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                  <label for="loginPassword">密碼</label>
+                </div>
+
+                <div class="form-floating password-field mb-4">
+                  <input type="password" class="form-control" placeholder="Password" id="loginPassword_confirm">
+                  <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                  <label for="loginPassword">密碼再輸入一次(確認)</label>
+                </div>
+
+                <a class="btn btn-primary rounded-pill btn-login w-100 mb-2">註 冊</a>
+              </form>
+              <!-- /form -->
+              
+              <p class="mb-0">已 經 是 會 員 ?<a href="#" data-bs-target="#modal-signup" data-bs-toggle="modal" data-bs-dismiss="modal" class="hover">我要登入</a></p>
+              <div class="divider-icon my-4">or</div>
+              <nav class="nav social justify-content-center text-center">
+                <a href="#" class="btn btn-circle btn-sm btn-google">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                   <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                  </svg>
+                </a>
+                <a href="#" class="btn btn-circle btn-sm btn-facebook-f"><i class="uil uil-facebook-f"></i></a>
+                <a href="#" class="btn btn-circle btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-line" viewBox="0 0 16 16">
+                  <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0M5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.15.15 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157m.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832l-.013-.015v-.001l-.01-.01-.003-.003-.011-.009h-.001L7.88 4.79l-.003-.002-.005-.003-.008-.005h-.002l-.003-.002-.01-.004-.004-.002-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.2.2 0 0 0 .039.038l.001.001.01.006.004.002.008.004.007.003.005.002.01.003h.003a.2.2 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.16.16 0 0 0-.108.044h-.001l-.001.002-.002.003a.16.16 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.16.16 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
+                </svg>
+                </a>
+              </nav>
+              <!--/.social -->
+            </div>
+            <!--/.modal-content -->
+          </div>
+          <!--/.modal-body -->
+        </div>
+        <!--/.modal-dialog -->
+      </div>
+  <!-- /DIY 註冊區彈窗 -->
+
+
+
+  <!-- 右側 浮動瀏覽進度球 -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- /右側 浮動瀏覽進度球 -->
+
+  <!-- JS 引用區 -->
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <!-- /JS 引用區 -->
+
+
+
+  
+
+</body>
+
+</html>
