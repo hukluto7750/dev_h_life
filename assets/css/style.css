@@ -39625,9 +39625,70 @@ footer.bg-dark.angled.upper-start:before {
 
 /* 以下為 DIY 新增 */
 
+/* DIY story.html  */
+
+/* @media (width < 768px){
+  #story_slideshow_01{
+    data-image-src:"./assets/img/photos/story_slideshow_01_mobile.png"
+  }
+} */
+
+#corporate_culture_title{
+  margin-top: 2rem;
+}
+
+.diy_corporate_culture_content img{
+  height: 100%;
+}
+
+.diy_corporate_culture_en{
+  color:#225679;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0rem !important;
+  letter-spacing:0.1rem;
+}
+.diy_corporate_culture_ch{
+  color:#231815;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0rem !important;
+  letter-spacing:0.5rem;
+}
+
+.diy_corporate_culture_content_title{
+  color:#225679;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0rem !important;
+  letter-spacing:0.1rem;
+}
+
+.diy_brand_value_content_title{
+  color:#225679;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0rem !important;
+  letter-spacing:0.1rem;
+}
+
+.diy_corporate_culture_content_text{
+  color:#231815;
+  font-size: 1rem;
+  font-weight:normal;
+  margin-bottom: 0rem !important;
+  letter-spacing:0.1rem;
+}
+
+
 
 
 /*DIY philosophy.html 關於休斯區塊 */
+
+.diy_about_hughes_content img{
+  max-width: 70%;
+  }
+
 .diy_about_hughes_en{
   color:#225679;
   font-size: 1rem;
@@ -39657,15 +39718,28 @@ footer.bg-dark.angled.upper-start:before {
   margin-bottom: 0rem !important;
   letter-spacing:0.1rem;
 }
-.diy_about_hughes_content_right img{
-  max-width: 80%;
+.diy_about_hughes_content img{
+  max-width: 70%;
 }
 
 
-/* 我們的實力區塊 */
+/* DIY philosophy.html 我們的實力區塊 */
 .section_OurAdvantages{
   min-height: 25rem;
 }
+
+@media (width < 768px){
+  .section_OurAdvantages{
+    min-height: 60rem;
+  }
+}
+
+@media (768px < width < 992px){
+  .section_OurAdvantages{
+    min-height: 42rem;
+  }
+}
+
 
 .section_OurAdvantages img{
   height: 10rem;
@@ -39675,10 +39749,11 @@ footer.bg-dark.angled.upper-start:before {
 }
 
 .section_OurAdvantages_div{
-padding-top: 0rem !important;
+padding-top: 1rem !important;
+height: 20rem;
 }
 .diy_our_advantages_content_title_en{
-  color:#225679;
+  color:#225679 !important; 
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0rem !important;
@@ -39700,7 +39775,7 @@ padding-top: 0rem !important;
   margin-bottom: 0rem !important;
   letter-spacing:0.5rem;
 }
-/* /我們的實力區塊 */
+
 
 /*DIY index.html 頂部導航條 */
 #top_nav_area{

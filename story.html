@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
+  <meta name="keywords"
+    content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+  <meta name="author" content="elemis">
+  <title>品牌故事</title>
+  <!-- <link rel="shortcut icon" href="./assets/img/favicon.png"> -->
+  <!-- DIY 改圖 -->
+  <link rel="shortcut icon" href="./assets/img/diy_favicon.png">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<!-- include共用的 main_menu.html JS部分 -->
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+  
+<!-- /include共用的 main_menu.html JS部分-->
+
+
+
+<body>
+  <!-- include 共用的 content.html  -->
+  <div w3-include-html="main_menu.html"></div> 
+  <script>
+  includeHTML();
+  </script>
+  <!-- /include 共用的 content.html  -->
+
+  <!-- slideshow區域 -->
+  <section class="wrapper bg-dark">
+    <div class="swiper-container swiper-hero dots-over" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="true" data-items="1">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg7.jpg"> -->
+            <!-- DIY 改圖與移除灰階半透明覆蓋效果-->
+          <div id='story_slideshow_01' class="swiper-slide bg-dark bg-image" data-image-src="./assets/img/photos/story_slideshow_01.png">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
+                  <!-- <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">We bring solutions to make life easier.</h2>
+                  <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">We are a creative company that focuses on long term relationships with customers.</p> -->
+                  <!-- <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div> -->
+                </div>
+                <!--/column -->
+              </div>
+              <!--/.row -->
+            </div>
+            <!--/.container -->
+          </div>
+          <!--/.swiper-slide -->
+         
+        </div>
+        <!--/.swiper-wrapper -->
+      </div>
+      <!-- /.swiper -->
+    </div>
+    <!-- /.swiper-container -->
+  </section>
+  
+  <!-- /slideshow區域 -->
+
+  <div class="row" id="corporate_culture_title">
+    <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+      <h2 class="diy_corporate_culture_en">CORPORATE CULTURE</h2>
+      <h2 class="diy_corporate_culture_ch">企業文化</h2>
+      <!-- DIY -->
+      
+    </div>
+    <!-- /column -->
+  </div>
+
+  <!-- 企業文化區塊 -->
+  <section class="wrapper bg-light">
+    <div class="container">
+      <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+        <div class="col-lg-7 diy_corporate_culture_content">
+ 
+          <h5 class="display-4 mb-5 diy_corporate_culture_content_title">
+          堅守安心安全的故事</h5>
+          <p class="mb-6 diy_corporate_culture_content_text">休斯背後有一個值得信賴的故事，
+            我們最大的股東-味王食品股份有限公司擁有六十五年的悠久歷史，以其無與倫比的食品安全紀錄在業界樹立了標竿。
+            在這六十五年裡，味王食品從未發生過任何食安問題，這是我們引以為豪的傳承。這種對品質和安全的堅持，
+            是我們每一天工作的核心動力。味王食品的嚴謹和專業的DNA深植於休斯國際，我們承諾將這份安心和信任延續到
+            每一款休斯的產品中。因為我們相信，只有真正安全可靠的產品，才能贏得消費者的信任和依賴。
+          </p>
+         
+          <!--/.row -->
+        </div>
+        <!--/column -->
+        <div class="col-lg-5 order-lg-2 diy_corporate_culture_content">
+          <figure><img class="w-auto" src="./assets/img/photos/story_text_img_01.png" srcset="./assets/img/photos/story_text_img_01.png" alt=""></figure>
+        </div>
+        <!--/column -->
+        
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <!-- /企業文化區塊 -->
+  <div class="row" id="brand_value_title">
+    <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
+      <h2 class="diy_about_hughes_en">BRAND VALUE</h2>
+      <h2 class="diy_about_hughes_ch">品牌價值</h2>
+      <!-- DIY -->
+      
+    </div>
+    <!-- /column -->
+  </div>
+
+   <!-- 品牌價值區塊 -->
+   <section class="wrapper bg-light">
+    <div class="container">
+      <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+        
+        <div class="col-lg-7 order-lg-2 diy_brand_value_content_img">
+ 
+          <h5 class="display-4 mb-5 diy_brand_value_content_title">
+          科學為基礎</h5>
+          <p class="mb-6 diy_about_hughes_content_text">在休斯，我們重新定義了保健品的新標準，以科學為基礎。
+            我們擁有專業的研發團隊和先進的實驗室，致力於創新研發。我們的產品獲得了許多項國際專利和美國及
+            台灣等國家品質認證，確保每一款產品都能夠滿足您的健康需求。
+          </p>
+         
+          <!--/.row -->
+        </div>
+        <!--/column -->
+        <div class="col-lg-5 diy_corporate_culture_content">
+          <figure><img class="w-auto" src="./assets/img/photos/story_text_img_02.png" srcset="./assets/img/photos/story_text_img_02.png" alt=""></figure>
+        </div>
+        <!--/column -->
+        
+      </div>
+      <!--/.row -->
+
+      <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+        
+        <div class="col-lg-7 diy_brand_value_content_img">
+ 
+          <h5 class="display-4 mb-5 diy_brand_value_content_title">
+          科學為基礎</h5>
+          <p class="mb-6 diy_about_hughes_content_text">在休斯，我們重新定義了保健品的新標準，以科學為基礎。
+            我們擁有專業的研發團隊和先進的實驗室，致力於創新研發。我們的產品獲得了許多項國際專利和美國及
+            台灣等國家品質認證，確保每一款產品都能夠滿足您的健康需求。
+          </p>
+         
+          <!--/.row -->
+        </div>
+        <!--/column -->
+        <div class="col-lg-5 order-lg-2 diy_corporate_culture_content">
+          <figure><img class="w-auto" src="./assets/img/photos/story_text_img_03.png" srcset="./assets/img/photos/story_text_img_03.png" alt=""></figure>
+        </div>
+        <!--/column -->
+        
+      </div>
+      <!--/.row -->
+      <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+        
+        <div class="col-lg-7 order-lg-2 diy_brand_value_content_img">
+ 
+          <h5 class="display-4 mb-5 diy_brand_value_content_title">
+          科學為基礎</h5>
+          <p class="mb-6 diy_about_hughes_content_text">在休斯，我們重新定義了保健品的新標準，以科學為基礎。
+            我們擁有專業的研發團隊和先進的實驗室，致力於創新研發。我們的產品獲得了許多項國際專利和美國及
+            台灣等國家品質認證，確保每一款產品都能夠滿足您的健康需求。
+          </p>
+         
+          <!--/.row -->
+        </div>
+        <!--/column -->
+        <div class="col-lg-5 diy_corporate_culture_content">
+          <figure><img class="w-auto" src="./assets/img/photos/story_text_img_04.png" srcset="./assets/img/photos/story_text_img_04.png" alt=""></figure>
+        </div>
+        <!--/column -->
+        
+      </div>
+      <!--/.row -->
+      <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+        
+        <div class="col-lg-7 diy_brand_value_content_img">
+ 
+          <h5 class="display-4 mb-5 diy_brand_value_content_title">
+          科學為基礎</h5>
+          <p class="mb-6 diy_about_hughes_content_text">在休斯，我們重新定義了保健品的新標準，以科學為基礎。
+            我們擁有專業的研發團隊和先進的實驗室，致力於創新研發。我們的產品獲得了許多項國際專利和美國及
+            台灣等國家品質認證，確保每一款產品都能夠滿足您的健康需求。
+          </p>
+         
+          <!--/.row -->
+        </div>
+        <!--/column -->
+        <div class="col-lg-5 order-lg-2 diy_corporate_culture_content">
+          <figure><img class="w-auto" src="./assets/img/photos/story_text_img_05.png" srcset="./assets/img/photos/story_text_img_05.png" alt=""></figure>
+        </div>
+        <!--/column -->
+        
+      </div>
+      <!--/.row -->
+      <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+        
+        <div class="col-lg-7 order-lg-2 diy_brand_value_content_img">
+ 
+          <h5 class="display-4 mb-5 diy_brand_value_content_title">
+          科學為基礎</h5>
+          <p class="mb-6 diy_about_hughes_content_text">在休斯，我們重新定義了保健品的新標準，以科學為基礎。
+            我們擁有專業的研發團隊和先進的實驗室，致力於創新研發。我們的產品獲得了許多項國際專利和美國及
+            台灣等國家品質認證，確保每一款產品都能夠滿足您的健康需求。
+          </p>
+         
+          <!--/.row -->
+        </div>
+        <!--/column -->
+        <div class="col-lg-5 diy_corporate_culture_content">
+          <figure><img class="w-auto" src="./assets/img/photos/story_text_img_06.png" srcset="./assets/img/photos/story_text_img_06.png" alt=""></figure>
+        </div>
+        <!--/column -->
+        
+      </div>
+      <!--/.row -->
+      <div class="row gx-lg-8 gy-10 align-items-center">
+        
+        <div class="col-lg-7 gx-xl-12 diy_brand_value_content_img">
+ 
+          <h5 class="display-4 mb-5 diy_brand_value_content_title">
+          科學為基礎</h5>
+          <p class="mb-6 diy_about_hughes_content_text">在休斯，我們重新定義了保健品的新標準，以科學為基礎。
+            我們擁有專業的研發團隊和先進的實驗室，致力於創新研發。我們的產品獲得了許多項國際專利和美國及
+            台灣等國家品質認證，確保每一款產品都能夠滿足您的健康需求。
+          </p>
+         
+          <!--/.row -->
+        </div>
+        <!--/column -->
+        <div class="col-lg-5 order-lg-2 diy_corporate_culture_content">
+          <figure><img class="w-auto" src="./assets/img/photos/story_text_img_07.png" srcset="./assets/img/photos/story_text_img_07.png" alt=""></figure>
+        </div>
+        <!--/column -->
+        
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /品牌價值區塊 -->
+
+  
+
+
+
+   <!-- include 共用的 footer.html  -->
+   <div w3-include-html="footer.html"></div> 
+   <script>
+   includeHTML();
+   </script>
+   <!-- /include 共用的 footer.html  -->
+  
+  <!-- include 共用的 login_pop.html  -->
+  <div w3-include-html="login_pop.html"></div> 
+  <script>
+  includeHTML();
+  </script>
+  <!-- /include 共用的 login_pop.html  -->
+  
+  <!-- include 共用的 signup_pop.html  -->
+  <div w3-include-html="signup_pop.html"></div> 
+  <script>
+  includeHTML();
+  </script>
+  <!-- /include 共用的 signup_pop.html  -->
+
+  <!-- 右側 浮動瀏覽進度球 -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- /右側 浮動瀏覽進度球 -->
+
+   <!-- /include 共用的 progress_ball.html  -->
+  <!-- JS 引用區 -->
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/custom.js"></script>
+  
+
+  
+  <!-- /JS 引用區 -->
+
+
+
+  
+
+</body>
+
+</html>
