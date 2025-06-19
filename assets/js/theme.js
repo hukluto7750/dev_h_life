@@ -101,7 +101,17 @@ var theme = {
     if (navbar == null) return;
     const navOffCanvasBtn = document.querySelectorAll(".offcanvas-nav-btn");
     const navOffCanvas = document.querySelector('.navbar:not(.navbar-clone) .offcanvas-nav');
-    const bsOffCanvas = new bootstrap.Offcanvas(navOffCanvas, {scroll: true});
+    
+    /*
+    this is a workaround for create the Offcanvas only once even if theme.init() is called 
+    multiple times
+    */
+    //====================================================================================================
+    window._bsOffCanvas = window._bsOffCanvas ?? new bootstrap.Offcanvas(navOffCanvas, {scroll: true});
+    const bsOffCanvas= window._bsOffCanvas;
+
+    //====================================================================================================
+
     const scrollLink = document.querySelectorAll('.onepage .navbar li a.scroll');
     const searchOffcanvas = document.getElementById('offcanvas-search');
     navOffCanvasBtn.forEach(e => {
@@ -914,4 +924,10 @@ var theme = {
     });
   },
 }
-theme.init();
+/*
+if you want to use includeHTML theme.init() must run after the last execution of includeHTML
+since it is a recursive function it's hard to detect the last run
+so you could move theme.init() inside  includeHTML 
+*/
+
+//theme.init();
