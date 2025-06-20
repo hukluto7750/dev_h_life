@@ -18,7 +18,8 @@
 </head>
 
 
-<!-- include共用的 main_menu.html JS部分 -->
+<!-- 共用的 html includeHTML函數部分 -->
+ <!-- 參考來源 https://www.w3schools.com/howto/howto_html_include.asp -->
 <script>
   function includeHTML() {
     var z, i, elmnt, file, xhttp;
@@ -48,18 +49,173 @@
     }
   };
   </script>
-  
-<!-- /include共用的 main_menu.html JS部分-->
+<!-- /共用的 html includeHTML函數部分 -->
 
-
-
+<!-- 頂部主選單 -->
 <body>
-  <!-- include 共用的 content.html  -->
-  <div w3-include-html="main_menu.html"></div> 
-  <script>
-  includeHTML();
-  </script>
-  <!-- /include 共用的 content.html  -->
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none">
+        <div class="container flex-lg-row flex-nowrap align-items-center">
+          <div id="top_nav_area" class="navbar-brand w-100">
+            <a href="./index.html">
+              <img class="logo-dark" src="./assets/img/diy_logo.png" srcset="./assets/img/diy_logo@2x.png 2x" alt="" />
+              <img class="logo-light" src="./assets/img/diy_logo-light.png" srcset="./assets/img/diy_logo-light@2x.png 2x"
+                alt="" />
+            </a>
+          </div>
+          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+            <div class="offcanvas-header d-lg-none">
+              <h3 class="text-white fs-30 mb-0">休斯國際生活</h3>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./index.html">首頁</a>
+                </li>
+
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">關於我們</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="./philosophy.html">經營理念</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">創辦人介紹</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="./story.html">品牌故事</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">商品目錄</a>
+                  
+                
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">事業機會</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">最新消息</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">活動花絮</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">活動行事曆</a></li>      
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">服務專區</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">會員資訊</a></li>      
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">個人資料</a></li>      
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">修改密碼</a></li>      
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">訂單資料</a></li>      
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">組織查詢</a></li>      
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">週獎金查詢</a></li>      
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">電子錢包資料</a></li>      
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">下載專區</a></li>       
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">聯絡我們</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="javascript:void(0)">常見問題</a></li>        
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                 <!-- 註冊彈窗連結  區塊部分放在最底部 (往下可找到) -->
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="modal" data-bs-target="#modal-signup">加入休斯</a>
+                </li>
+                <li class="nav-item dropdown">
+
+                  <!-- 登入彈窗連結  區塊部分放在最底部 (往下可找到) -->
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="modal" data-bs-target="#modal-signin">登入會員</a>
+                  </li>
+                </li>
+              </ul>
+              <!-- /.navbar-nav -->
+              <div class="offcanvas-footer d-lg-none">
+                <div>
+                  <a href="mailto:service@hugheslifescience.com" class="link-inverse">service@hugheslifescience.com</a>
+                  <br /> 02-27485085<br />
+                  <nav id="footer_social_icon" class="nav social social-white mt-4">
+                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    <a href="#"><i class="uil uil-instagram"></i></a>
+                    <a href="#"><i class="uil uil-youtube"></i></a>
+                  </nav>
+                  <!-- /.social -->
+                </div>
+              </div>
+              <!-- /.offcanvas-footer -->
+            </div>
+            <!-- /.offcanvas-body -->
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-other w-100 d-flex ms-auto">
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i
+                    class="uil uil-info-circle"></i></a></li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search"><i
+                    class="uil uil-search"></i></a></li>
+              <li class="nav-item d-lg-none">
+                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-other -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+      <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
+        <div class="offcanvas-header">
+          <h3 class="text-white fs-30 mb-0">休斯國際生活</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pb-6">
+          <div class="widget mb-8">
+            <p>休斯國際生活</p>
+          </div>
+          <!-- /.widget -->
+          <div class="widget mb-8">
+            <h4 class="widget-title text-white mb-3">聯繫資訊</h4>
+            <address>臺北市松山區<br />光復南路1號5樓之1</address>
+            <a href="mailto:service@hugheslifescience.com">service@hugheslifescience.com</a><br /> 02-27485085
+          </div>
+          <!-- /.widget -->
+          <div class="widget mb-8">
+            <h4 class="widget-title text-white mb-3">了解我們</h4>
+            <ul class="list-unstyled">
+              <li><a href="javascript:void(0)">品牌故事</a></li>
+              <li><a href="javascript:void(0)">會員規範</a></li>
+              <li><a href="javascript:void(0)">隱私政策</a></li>
+              <li><a href="javascript:void(0)">聯絡我們</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">關注我們</h4>
+            <nav class="nav social social-white">
+              <a href="https://www.facebook.com/profile.php?id=61574010023961"><i class="uil uil-facebook-f"></i></a>
+              <a href="javascript:void(0)"><i class="uil uil-youtube"></i></a>
+            </nav>
+            <!-- /.social -->
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.offcanvas-body -->
+      </div>
+      <!-- /.offcanvas -->
+      <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
+        <div class="container d-flex flex-row py-6">
+          <form class="search-form w-100">
+            <input id="search-form" type="text" class="form-control" placeholder="請輸入要搜尋的關鍵字">
+          </form>
+          <!-- /.search-form -->
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.offcanvas -->
+    </header>
+    <!-- /header -->
+  </div>
+<!-- /頂部主選單 -->
 
   <!-- slideshow區域 -->
   <section class="wrapper bg-dark">
@@ -379,25 +535,16 @@
   <!-- /最新消息 -->
 
 
-   <!-- include 共用的 footer.html  -->
-   <div w3-include-html="footer.html"></div> 
-   <script>
-   includeHTML();
-   </script>
-   <!-- /include 共用的 footer.html  -->
+  <!-- include 共用的 footer.html  -->
+  <div w3-include-html="footer.html"></div> 
+  <!-- /include 共用的 footer.html  -->
   
   <!-- include 共用的 login_pop.html  -->
   <div w3-include-html="login_pop.html"></div> 
-  <script>
-  includeHTML();
-  </script>
   <!-- /include 共用的 login_pop.html  -->
   
   <!-- include 共用的 signup_pop.html  -->
   <div w3-include-html="signup_pop.html"></div> 
-  <script>
-  includeHTML();
-  </script>
   <!-- /include 共用的 signup_pop.html  -->
   
 
@@ -409,15 +556,18 @@
   </div>
   <!-- /右側 浮動瀏覽進度球 -->
 
-
   <!-- JS 引用區 -->
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/custom.js"></script>
   <!-- /JS 引用區 -->
 
+  <!-- 呼叫 includeHTML()  -->
+  <script>
+    includeHTML();
+  </script>
+  <!-- /呼叫 includeHTML()  -->
 
-
-  
 
 </body>
 
