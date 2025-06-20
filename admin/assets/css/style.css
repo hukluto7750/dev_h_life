@@ -75128,3 +75128,11 @@ body[class*=dark-] .for-light {
 	4.1. Dark CSS ends
 ==========================**/
 /*# sourceMappingURL=style.css.map */
+
+
+/* DIY 區域 開始 */
+#diy_logo-wrapper img{
+  max-width:88%;
+}
+
+/* / DIY 區域 結束 */
