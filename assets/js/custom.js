@@ -11,9 +11,10 @@ function changeImageSource(screen_size) {
     if (screen_size.matches) { 
 
         if(index_slideshow_01){
-            index_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_02.jpg');");
-            index_slideshow_02.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_01.jpg');");
-            index_slideshow_03.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_03.jpg');");
+
+            index_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_mobile_01.jpg');");
+            index_slideshow_02.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_mobile_02.jpg');");
+            index_slideshow_03.setAttribute("style", "background-image: url('./assets/img/photos/hot_product_mobile_03.jpg');");
         }
         
         if(philosophy_slideshow_01){
