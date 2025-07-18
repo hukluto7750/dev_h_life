@@ -39684,19 +39684,25 @@ footer.bg-dark.angled.upper-start:before {
   max-width: 70%;
   }
 
+/* #about_hughes_row{
+  margin-bottom: 1.5rem;
+}   */
+
 .diy_about_hughes_en{
   color:#225679;
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0rem !important;
   letter-spacing:0.1rem;
+  margin-top: 0.5rem;
 }
 .diy_about_hughes_ch{
   color:#231815;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 0rem !important;
   letter-spacing:0.5rem;
+  margin-bottom: 0.5rem !important;
+
 }
 
 .diy_about_hughes_content_title{
@@ -39717,10 +39723,15 @@ footer.bg-dark.angled.upper-start:before {
   max-width: 70%;
 }
 
+.default_cursor{
+  cursor: default;
+}
+
 
 /* DIY philosophy.html 我們的實力區塊 */
 .section_OurAdvantages{
   min-height: 25rem;
+  margin-top: 0.5rem;
 }
 
 @media (width < 768px){
@@ -39770,6 +39781,16 @@ height: 20rem;
   margin-bottom: 0rem !important;
   letter-spacing:0.5rem;
 }
+
+/*DIY index.html 左側頂部 LOGO */
+#top_nav_area .logo-dark{
+ width: 11rem;
+}
+
+#top_nav_area .logo-light{
+  width: 11rem ;
+}
+
 
 
 /*DIY index.html 頂部導航條 */
@@ -39835,10 +39856,27 @@ height: 20rem;
   color:#438ABD;
 }
 
+
+
+
+
 /*DIY index.html FOOTER 區域 */
 .footer_area{
   background-color: #CFDAEC;
+  
 }
+
+
+#index_section_between_hot_product_and_footer{
+  margin-top: 5rem;
+}
+@media (max-width:768px){
+  #index_section_between_hot_product_and_footer{
+    margin-top: -18rem;
+
+  }
+}
+
 footer li a{
   color:#727171 !important;
   font-weight: bold;
@@ -39863,6 +39901,10 @@ footer h4{
   }
 }
 
+
+
+
+
 /* DIY index.html 最底部 */
 .bottom_area{
   background-color: #225679;
@@ -39871,4 +39913,6 @@ footer h4{
   font-size: 30px;
   color:white;
 }
+
+
 
