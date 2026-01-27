@@ -39928,3 +39928,54 @@ footer h4{
   }
 }
 
+
+/* DIY consultant.html  */
+.diy_pro_to_future_ch{
+    color:#225679;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem !important;
+    letter-spacing:0.5rem;
+}
+
+#diy_pro_to_future_title{
+  margin-top: 2rem;
+}
+
+.diy_consultant_team_title{
+  color:#225679;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0rem !important;
+  letter-spacing:0.1rem;
+}
+
+.diy_consultant_team_text{
+  color:#231815;
+  font-size: 1rem;
+  font-weight:normal;
+  margin-bottom: 0rem !important;
+  letter-spacing:0.1rem;
+}
+
+.consultant_team img{
+  height: 100%;
+}
+.consultant_team_title{
+  color:#225679;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0rem !important;
+  letter-spacing:0.1rem;
+}
+.consultant_team_text{
+  color:#231815;
+  font-size: 1rem;
+  font-weight:normal;
+  margin-bottom: 0rem !important;
+  letter-spacing:0.1rem;
+}
+
+#consultant_bottom_wide{
+  width: 100% !important;
+}

@@ -24,6 +24,9 @@ function changeImageSource(screen_size) {
         if(story_slideshow_01){
             story_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/story_slideshow_01_mobile.png');");
         }
+        if(consultant_slideshow_01){
+            consultant_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/consultant_slideshow_01.png');");
+        }
 
     } else {
      
@@ -39,6 +42,9 @@ function changeImageSource(screen_size) {
         
         if(story_slideshow_01){
             story_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/story_slideshow_01.png');");
+        }
+        if(consultant_slideshow_01){
+            consultant_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/consultant_slideshow_01.png');");
         }
     }
   }
