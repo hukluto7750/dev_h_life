@@ -39637,17 +39637,18 @@ footer.bg-dark.angled.upper-start:before {
 }
 
 .diy_corporate_culture_en{
-  color:#225679;
-  font-size: 1rem;
+  color:#656464;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0rem !important;
   letter-spacing:0.1rem;
 }
 .diy_corporate_culture_ch{
-  color:#231815;
+  color:#225679;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0rem !important;
+  text-align: left;
   letter-spacing:0.5rem;
 }
 
@@ -39978,4 +39979,31 @@ footer h4{
 
 #consultant_bottom_wide{
   width: 100% !important;
+  height: 100% !important;
+}
+
+/* DIY leader.html  */
+#leader_top_wide{
+  width: 100% !important;
+  margin-top: 6rem;
+}
+
+
+/* DIY advantages.html  */
+.advantages_description_img_block{
+  height: 100%;
+}
+
+.advantages_description_text{
+  color:#231815;
+  font-size: 1rem;
+  font-weight:normal;
+  margin-bottom: 5rem !important;
+  margin-top: 5rem !important;
+  letter-spacing:0.1rem;
+}
+
+/* DIY exclusive.html  */
+.exclusive_description_img_block{
+  height: 100%;
 }
