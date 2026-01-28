@@ -18,14 +18,14 @@ function changeImageSource(screen_size) {
         }
         
         if(philosophy_slideshow_01){
-            philosophy_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/philosophy_slideshow_01_mobile.png');");
+            philosophy_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/philosophy_top_wide_mobile.png');");
         }
         
         if(story_slideshow_01){
-            story_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/story_slideshow_01_mobile.png');");
+            story_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/story_top_wide_mobile.png');");
         }
         if(consultant_slideshow_01){
-            consultant_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/consultant_slideshow_01.png');");
+            consultant_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/consultant_top_wide_mobile.png');");
         }
 
     } else {
@@ -37,14 +37,14 @@ function changeImageSource(screen_size) {
         }
         
         if(philosophy_slideshow_01){
-            philosophy_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/philosophy_slideshow_01.png');");
+            philosophy_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/philosophy_top_wide.png');");
         }
         
         if(story_slideshow_01){
-            story_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/story_slideshow_01.png');");
+            story_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/story_top_wide.png');");
         }
         if(consultant_slideshow_01){
-            consultant_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/consultant_slideshow_01.png');");
+            consultant_slideshow_01.setAttribute("style", "background-image: url('./assets/img/photos/consultant_top_wide.png');");
         }
     }
   }

@@ -40007,3 +40007,56 @@ footer h4{
 .exclusive_description_img_block{
   height: 100%;
 }
+
+#exclusive_top_wide_area{
+  margin-bottom: 1.5rem;
+}
+
+/* DIY videos.html  */
+.video_carousel{
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 auto;
+
+}
+
+.video_read_more{
+  margin-top: 2rem;
+  text-align: center;
+  color: #225679;
+}
+
+
+.videos_pagination{
+  justify-content: center !important;
+}
+
+
+/* DIY activities.html */
+.activity_title{
+  font-size: 1.5rem;
+  color: #225679;
+}
+
+.activities_block{
+  padding: 3rem !important;
+}
+
+
+
+
+
+
+/* news.html */
+
+.news_item_block{
+  padding-top: 0rem !important;
+}
+
+/* 公用 */
+.big_tab_text a{
+  font-size: 1.5rem !important;
+  color: #225679 !important; 
+  border-color: #727171 !important;
+  border-width:0.2rem !important;
+}
